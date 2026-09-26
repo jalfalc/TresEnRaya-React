@@ -1,8 +1,8 @@
-export default function GameStatus({ currentPlayer, turn }) {
+export default function GameStatus({ currentPlayer, turn, winner}) {
     return (
         <div className="game-status">
             <p>Turno de: {currentPlayer}</p>
-            <p>Movimiento nº: {turn}</p>
+            {winner && <p>Ganador: {winner}</p>}
         </div>
     );
 }
