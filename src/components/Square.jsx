@@ -1,6 +1,6 @@
-export default function Square({ value }) {
+export default function Square({ value, onClick }) {
 
   return (
-    <button className="square">{value}</button>
+    <button className="square" onClick={onClick}>{value}</button>
   );
 }

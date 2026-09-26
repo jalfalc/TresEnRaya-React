@@ -1,18 +1,18 @@
 import Square from './Square';
-export default function Board() {
+export default function Board({ onChangePlayer }) {
 
   return (
     <>
         <div className="board"> 
-            <Square/>
-            <Square/>
-            <Square/>
-            <Square/>
-            <Square/>
-            <Square/>
-            <Square/>
-            <Square/>
-            <Square/>
+            <Square onClick={onChangePlayer}/>
+            <Square onClick={onChangePlayer}/>
+            <Square onClick={onChangePlayer}/>
+            <Square onClick={onChangePlayer}/>
+            <Square onClick={onChangePlayer}/>
+            <Square onClick={onChangePlayer}/>
+            <Square onClick={onChangePlayer}/>
+            <Square onClick={onChangePlayer}/>
+            <Square onClick={onChangePlayer}/>
         </div>    
     </>
   );
